@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://3hb00qw8j140"]
+
+[ext_resource type="Script" path="res://scripts/components/static_box.gd" id="1_noj7t"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fi2ph"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vx37m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_didwj"]
+lightmap_size_hint = Vector2i(14, 21)
+material = SubResource("StandardMaterial3D_vx37m")
+
+[node name="static_box" type="StaticBody3D"]
+script = ExtResource("1_noj7t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_fi2ph")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_didwj")

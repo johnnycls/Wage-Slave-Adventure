@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct6us0r0vhs15"]
+
+[ext_resource type="Script" path="res://scripts/uis/shop.gd" id="1_7g8xs"]
+
+[node name="Shop" type="VBoxContainer"]
+script = ExtResource("1_7g8xs")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="ScrollContainer/HBoxContainer"]
+layout_mode = 2
+text = "5 Tokens
+Watch Ads"
+
+[connection signal="pressed" from="ScrollContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

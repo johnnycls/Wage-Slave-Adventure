@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhguaedr7aorj"]
+
+[ext_resource type="Script" path="res://scripts/game/car.gd" id="1_chhpd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4b5tn"]
+size = Vector3(2, 1.2, 1.5)
+
+[node name="car" type="Area3D"]
+script = ExtResource("1_chhpd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_4b5tn")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

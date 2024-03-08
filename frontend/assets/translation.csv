@@ -1,0 +1,171 @@
+keys,en,zh,cmn
+LOADING,Loading,等陣,等会
+START,Start,開始,开始
+NAME,Username,用戶名稱,用户名称
+ENTER_NAME,Username,請輸入用戶名稱,请输入用户名称
+PW,Password,密碼,密码
+LOGIN,Login,登入,登录
+REGISTER,Register,註冊,注册
+ERR,Error,錯誤,错误
+LOGIN_ERR,Login Fail,登入失敗,登录失败
+LOGIN_ERR_DES,Please ensure the username and password are correct,請確認用戶名和密碼輸入無誤,请确认用户名和密码输入无误
+REGISTER_ERR,Registration Error,註冊錯誤,注册错误
+REGISTER_ERR_DES,The username may be used,用戶名可能已被使用,用户名可能已被使用
+WORK_ERR,work fail,工作失敗,工作失败
+WORK_ERR_DES,Please check your internet connection,請檢察你的網絡,请检查你的网络
+LVLS,Levels,關卡,关卡
+SKINS,Skins,皮膚,皮肤
+TRANSFER,Transfer Money,轉贈代幣,转赠代币
+SETTINGS,Settings,設定,设置
+LANGUAGE,Language,語言,语言
+TRANS_AMT,Transfer Amount,轉贈金額,转赠金额
+RECIPIENT,Recipient,接收人,接收人
+CONFIRM,Confirm,確定,确定
+BACK,Back,返回,返回
+SKIP,Skip,跳過,跳过
+CHAPTER_0,Chapter 1: The Last Supper,第一章:最後的晚餐,第一章：最后的晚餐
+CHAPTER_1,Chapter 2: It’s better to make money directly,第二章:賺錢還是直接點好,第二章：赚钱还是直接点好
+CHAPTER_2,Chapter 3: It’s better to be civilized when making money,第三章:賺錢還是文明點好,第三章：赚钱还是文明点好
+LEVEL0_TITLE,The Last Supper,最後的晚餐,最后的晚餐
+LEVEL1_TITLE,It’s better to be more practical when making money,賺錢還是踏實點好,赚钱还是踏实点好
+LEVEL100_TITLE,It’s better to make money directly,賺錢還是直接點好,赚钱还是直接点好
+LEVEL101_TITLE,Slash!,國際大刀會,国际大刀会
+LEVEL200_TITLE,It’s better to be civilized when making money,賺錢還是文明點好,赚钱还是文明点好
+LEVEL201_TITLE,Buy big and small,買大細,买大细
+LEVEL300_TITLE,To be continued,待續,待续
+TRANS_ERR,tranfer error,轉帳錯誤,转账错误
+TRANS_ERR_DES,Please check if the recipient is correctly input and you have enough money.,請確保收件人名稱正確且你有足夠代幣,请确保收件人名称正确且你有足够代币
+LOBBY_ERR,Enter Lobby Fail,進入大廳失敗,进入大厅失败
+LOBBY_ERR_DES,Last game session has not ended or server busy. Please try again later,上一場游戲尚未結束，或是伺服器繁忙，請稍後再試,上一场游戏尚未结束，或是伺服器繁忙，请稍后再试
+LOCKED,Locked,鎖了,锁了
+UNLOCK_0,,,
+UNLOCK_1,finish previous story to unlock,完成前面關卡以解鎖,完成前面关卡以解锁
+UNLOCK_100,finish chapter 1 to unlock,完成第一章以解鎖,完成第一章以解锁
+UNLOCK_101,finish previous story to unlock,完成前面關卡以解鎖,完成前面关卡以解锁
+UNLOCK_200,finish chapter 2 while holding $100 to unlock,完成第二章並持有$100以解鎖,完成第二章并持有$100以解锁
+UNLOCK_201,finish previous story to unlock,完成前面關卡以解鎖,完成前面关卡以解锁
+ACHIEVEMENT,Achievement,成就,成就
+STONE,Poor Guy,死窮鬼,死穷鬼
+IRON,A Bit Poor,沒死的窮人,没死的穷人
+BRONZE,Not Poor,不算很窮的人,不算很穷的人
+SILVER,Rich Guy,有錢人,有钱人
+GOLD,Millionaire,百萬富翁,百万富翁
+DIAMOND,Multi-Millionaire,千萬富翁,千万富翁
+HIGHEST,The most he ever had was: $,他最多曾擁有$,他最多曾拥有$
+ADS,Watch Ads to Get $10,看廣告以獲取$10,看广告以获取$10
+WITHDRAW_AMT,withdraw amount,提取金額,提取金额
+NOT_ENOUGH_MONEY,not enough money,餘額不足,余额不足
+STAT_SETTINGS,setting status points,設置技能點,设置技能点
+ATTACK,Attack,攻擊,攻击
+HP,HP,生命,生命
+SPEED,Speed,速度,速度
+RANGE,Range,範圍,范围
+PT_REMAINING,Status points remaining,剩餘技能點,剩余技能点
+START_SLASHING,Start Slashing,開始砍人,开始砍人
+SLASH,Slash,砍,砍
+LOBBY,Lobby,大廳,大厅
+WAITING_FOR_PLAYERS,Waiting for other players,正在匹配其他玩家，如要放棄等待，請按離開大廳,正在匹配其他玩家，如要放弃等待，请按离开大厅
+LEAVE_LOBBY,Leave Lobby,離開大廳,离开大厅
+SLASH_OTHERS,Slash others to get their money,砍其他玩家以搶他們的金錢,砍其他玩家以抢他们的金钱
+SWIPE_TO_MOVE,Swipe to move,滑動以移動,滑动以移动
+SWIPE_TO_ROTATE,Swipe to rotate,滑動以旋轉,滑动以旋转
+PRESS_TO_SLASH,Press to slash,按下按鈕以砍人,按下按钮以砍人
+PLAYER,player,玩家,玩家
+GAIN,Gain,賺取,赚取
+RATE,Rate,賠率,赔率
+DICE_ERR,dice error,大小錯誤,大小错误
+BUY_0,Big,大,大
+BUY_1,Small,小,小
+BUY_2,Double,雙骰,双骰
+BUY_3,Double 1,雙骰1,双骰1
+BUY_4,Double 2,雙骰2,双骰2
+BUY_5,Double 3,雙骰3,双骰3
+BUY_6,Double 4,雙骰4,双骰4
+BUY_7,Double 5,雙骰5,双骰5
+BUY_8,Double 6,雙骰6,双骰6
+BUY_9,Triple,全圍,全围
+BUY_10,Triple 1,圍骰1,围骰1
+BUY_11,Triple 2,圍骰2,围骰2
+BUY_12,Triple 3,圍骰3,围骰3
+BUY_13,Triple 4,圍骰4,围骰4
+BUY_14,Triple 5,圍骰5,围骰5
+BUY_15,Triple 6,圍骰6,围骰6
+FINISH,Finish,完成,完成
+STORY_0_0,The last cup noodles were eaten so quickly,最後的杯面，這麼快就被吃完了,最后的杯面，这么快就被吃完了
+STORY_0_1,Tomorrow is the day to pay the rent.,明天就是交房租的日子了,明天就是交房租的日子了
+STORY_0_2,But my savings have been used up,然而我的積蓄已經用完了,然而我的积蓄已经用完了
+STORY_0_3,Sigh,欸,欸
+STORY_0_4,It seems that I can’t escape the fate of working,看來我也逃不過打工的命運啊,看来我也逃不过打工的命运啊
+STORY_1_0,Business has been bad recently. I can only send you 8 dollars today. Please work with the company to tide over this difficult time.,"最近生意不好,今天只能發8塊錢,請與公司共渡時艱",最近生意不好，今天只能发8块钱，请与公司共渡时艰
+STORY_1_1,"This 9 dollar is your salary, take it.","這9塊錢是你的工資,你拿去吧",这9块钱是你的工资，你拿去吧
+STORY_1_2,"Don't say I treated you badly, just take the 10 dollars.","別說我虧待你,這10塊錢你拿去吧",别说我亏待你，这10块钱你拿去吧
+STORY_1_3,Don't think that I will forget that you have already received your salary. I will not pay you twice a day.,"別以為我會忘了你已經拿過工資了,我是不會一天給你發兩次工資的",别以为我会忘了你已经拿过工资了，我是不会一天给你发两次工资的
+STORY_100_0,(footsteps),（腳步聲）,（脚步声）
+STORY_100_1,Oops! My boss caught me sleeping,糟了！被老闆看到我睡覺,糟了！被老板看到我睡觉
+STORY_100_2,I don't know what he will do,不知道他會怎麼做呢,不知道他会怎么做呢
+STORY_100_3,Sigh. It’s really miserable to work,欸！打工真是慘啊,欸！打工真是惨啊
+STORY_100_4,"Obviously if I take a nap, it won't affect my work",明明我睡個覺並不影響工作,明明我睡个觉并不影响工作
+STORY_100_5,But I can’t sleep because my boss doesn’t like it,卻因為老闆不喜歡而不能睡,却因为老板不喜欢而不能睡
+STORY_100_6,I really don’t want to stay in this depressing environment for a moment.,這種壓抑的環境我真的一刻都不想呆,这种压抑的环境我真的一刻都不想待
+STORY_100_7,The saddest thing is that I still need to work for a long time,最可悲的是我還需要打很長時間的工,最可悲的是我还需要打很长时间的工
+STORY_100_8,Doing things you don’t want to do,做著自己不想做的東西,做着自己不想做的东西
+STORY_100_9,But it cannot be exchanged for equivalent rewards.,卻換不來對等的回報,却换不来对等的回报
+STORY_100_10,Wasting your youth,浪費著自己的青春,浪费着自己的青春
+STORY_100_11,But for life,可是為了生活,可是为了生活
+STORY_100_12,How do I get out of work?,我又怎麼擺脫工作制度呢,我又怎么摆脱工作制度呢
+STORY_100_13,There have been many stabbings recently,最近發生不少砍人事件,最近发生不少砍人事件
+STORY_100_14,I wonder if they couldn’t bear the pressure of work and went crazy.,不知道他們是不是承受不住打工的壓力而瘋了呢,不知道他们是不是承受不住打工的压力而疯了呢
+STORY_100_15,Eh,欸,欸
+STORY_100_16,You can’t make much money by working anyway.,反正打工也賺不了多少錢,反正打工也赚不了多少钱
+STORY_100_17,I think making money by stabbing isn't a bad idea,靠砍人賺錢好像做得過喔,靠砍人赚钱好像做得过喔
+STORY_100_18,(the next day),（第二天）,（第二天）
+STORY_100_19,Hello everyone,大家好,大家好
+STORY_100_20,Today is my lastday,今天是我lastday,今天是我lastday
+STORY_100_21,I'm going to make a fortune,我去發財了,我去发财了
+STORY_100_22,Good luck everyone,大家工作加油,大家工作加油
+STORY_100_23,"(After saying that, I picked up my backpack and left)",（說完，我就拿起背包離開）,（说完，我就拿起背包离开）
+STORY_100_24,(Everyone looked at my back and were stunned),(眾人望著我的背影呆住了),（众人望着我的背影呆住了）
+STORY_100_25,"(When I got to the door, the boss stopped me)",(走到門口老闆叫住了我),（走到门口老板叫住了我）
+STORY_100_26,Have you thought it through?,你想清楚了嗎,你想清楚了吗
+STORY_100_27,You're leaving like this now,你現在這樣走了,你现在这样走了
+STORY_100_28,I will discredit you,我就抹黑你,我就抹黑你
+STORY_100_29,No one will dare to hire you then,到時候沒人敢請你,到时候没人敢请你
+STORY_100_30,See how you still live,你看你還怎麼生活,你看你还怎么生活
+STORY_100_31,I figured it out,我想清楚了,我想清楚了
+STORY_100_32,"Anyway, I'm just here to help you defraud other people's money.",反正在這裏不過是幫你騙別人的錢,反正在这里不过是帮你骗别人的钱
+STORY_100_33,Then why don't I grab it myself?,那我為啥不親自搶呢,那我为啥不亲自抢呢
+STORY_100_34,I bought all the kitchen knives,我菜刀都買好了,我菜刀都买好了
+STORY_100_35,I just sharpened the knife in the company toilet,剛剛就在公司廁所磨好刀,刚刚就在公司厕所磨好刀
+STORY_100_36,If any of you want to stop me,如果你們誰想阻我,如果你们谁想阻我
+STORY_100_37,Just prepare a kitchen knife,就備好菜刀,就备好菜刀
+STORY_100_38,Come find me on the street!,到街上找我吧！,到街上找我吧
+STORY_200_0,(footsteps),腳步聲,脚步声
+STORY_200_1,"Hey, did I fall asleep again?",欸，我又睡著了嗎,欸，我又睡着了吗
+STORY_200_2,Freud believed that dreams are manifestations of inner desires,佛洛伊德認為夢是内心欲望的體現,弗洛伊德认为梦是内心欲望的体现
+STORY_200_3,It seems that I really don’t want to go to work.,看來我真的很不想上班啊,看来我真的很不想上班啊
+STORY_200_4,"However, it is always not feasible to steal money by killing people.",不過透過砍人搶錢始終不太可行,不过透过砍人抢钱始终不太可行
+STORY_200_5,"First, it is illegal to kill someone",第一砍人是違法的,第一砍人是违法的
+STORY_200_6,The legal liability will only be higher than the money stolen.,法律責任比起搶到的錢只會更高,法律责任比起抢到的钱只会更高
+STORY_200_7,"Second, with my physique",第二，以我的體質,第二，以我的体质
+STORY_200_8,There is no way I can kill so many people.,根本沒能力砍過那麼多人,根本没能力砍过那么多人
+STORY_200_9,"Third, I am not a cruel person",第三，我並非殘暴的人,第三，我并非残暴的人
+STORY_200_10,Hurting so many people,傷害那麼多人,伤害那么多人
+STORY_200_11,My conscience won't feel good either,我良心也不會好受,我良心也不会好受
+STORY_200_12,Based on the above reasons,基於以上原因,基于以上原因
+STORY_200_13,I'd better think of other ways to make money.,我還是想其他方法賺錢吧,我还是想其他方法赚钱吧
+STORY_200_14,What else can be done?,還有甚麼辦法呢,还有什么办法呢
+STORY_200_15,"Hey, what is this advertisement?",欸，這廣告是？,欸，这广告是？
+STORY_200_16,(Online casino),（線上賭場）,（线上赌场）
+MINIGAMES,Mini Games,小遊戲,小游戏
+PONG,Pong,乓,乓
+RECORD,Highest Score,最高分,最高分
+NEW_RECORD,New Record!,破紀錄了！,破纪录了！
+PLAY_AGAIN,Play Again,再來一遍,再来一遍
+START_AT,Start At,從這裏開始,从这里开始
+DODGEBALL,Dodgeball,閃避球,闪避球
+COMING_SOON,Coming Soon,敬請期待,敬请期待
+SNAKE,Snake,貪食蛇打飛機,贪吃蛇打飞机
+UNLOCK_SNAKE,Get 200 points in the last game to unlock this level,在上一關裏獲得200分以解鎖,在上一关里获得200分以解锁
+DELETE_ACC,Press 3 Times to DELETE Your Account,按3次以刪除賬號,按3次以删除账号
+UNLOCK_DODGEBALL,Get 40 points in Pong to unlock this level,在上一關裏過得40分以解鎖,在上一关里获得40分以解锁
+MINIGAME_PTS,Mini Game Points,小遊戲分數,小游戏分数

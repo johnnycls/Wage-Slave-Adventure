@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkvm34xwulf0s"]
+
+[ext_resource type="Script" path="res://scripts/minigame_template/game.gd" id="1_sj4mn"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_sj4mn")
+
+[node name="Camera2D" type="Camera2D" parent="."]

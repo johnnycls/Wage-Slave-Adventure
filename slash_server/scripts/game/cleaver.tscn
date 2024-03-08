@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcubeuu2i82ct"]
+
+[ext_resource type="Script" path="res://scripts/game/cleaver.gd" id="1_vyafy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v612t"]
+size = Vector3(0.05, 0.2, 0.3)
+
+[node name="cleaver" type="Area3D"]
+script = ExtResource("1_vyafy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_v612t")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

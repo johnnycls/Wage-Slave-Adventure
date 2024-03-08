@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbmnaysdcs3fx"]
+
+[ext_resource type="Script" path="res://scripts/slash/results_ui.gd" id="1_xkf4a"]
+
+[node name="results_ui" type="VBoxContainer"]
+script = ExtResource("1_xkf4a")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "NAME"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "HP"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "$"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+text = "FINISH"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://babxy2l6tf725"]
+
+[resource]
+Control/font_sizes/font_size = 72
+PopupDialog/font_sizes/font_size = 72
+PopupMenu/font_sizes/font_size = 72

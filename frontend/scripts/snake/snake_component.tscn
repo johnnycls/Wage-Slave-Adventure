@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://6ipk65tmkvjo"]
+
+[ext_resource type="Script" path="res://scripts/snake/snake_component.gd" id="1_7wl2m"]
+[ext_resource type="Texture2D" uid="uid://diwkq8f84doik" path="res://assets/imgs/snake_components.jpg" id="2_5rlwj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_npidb"]
+size = Vector2(2, 10)
+
+[node name="SnakeComponent" type="Area2D" groups=["snake_components"]]
+script = ExtResource("1_7wl2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_npidb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_5rlwj")

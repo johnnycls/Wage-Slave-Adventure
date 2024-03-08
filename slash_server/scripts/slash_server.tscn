@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://blj1jgfbobgn7"]
+
+[ext_resource type="Script" path="res://scripts/slash_server.gd" id="1_x48my"]
+[ext_resource type="Script" path="res://scripts/lobby.gd" id="4_1fn8w"]
+[ext_resource type="Script" path="res://scripts/games.gd" id="5_gt8qu"]
+
+[node name="Slash_Server" type="Node"]
+script = ExtResource("1_x48my")
+
+[node name="Lobby" type="Node" parent="."]
+script = ExtResource("4_1fn8w")
+
+[node name="Games" type="Node" parent="."]
+script = ExtResource("5_gt8qu")

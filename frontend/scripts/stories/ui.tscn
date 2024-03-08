@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8ryse3md15uv"]
+
+[ext_resource type="Script" path="res://scripts/stories/ui.gd" id="1_mhh6x"]
+
+[node name="UI" type="VBoxContainer"]
+offset_right = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+script = ExtResource("1_mhh6x")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+text = "SKIP"
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="CenterContainer"]
+custom_minimum_size = Vector2(1920, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+autowrap_mode = 3

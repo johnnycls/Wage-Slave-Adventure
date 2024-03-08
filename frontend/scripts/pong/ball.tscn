@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dokc26el25a4e"]
+
+[ext_resource type="Script" path="res://scripts/pong/ball.gd" id="1_iys68"]
+[ext_resource type="Texture2D" uid="uid://buqgtby3lqgf3" path="res://assets/imgs/ball.png" id="2_8nrx4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_58dhh"]
+radius = 20.0
+
+[node name="Ball" type="Area2D" groups=["ball"]]
+script = ExtResource("1_iys68")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_58dhh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8nrx4")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

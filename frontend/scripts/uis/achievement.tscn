@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwyp2utrat4ug"]
+
+[ext_resource type="Script" path="res://scripts/uis/achievement.gd" id="1_0ndjq"]
+
+[node name="Achievement" type="CenterContainer"]
+script = ExtResource("1_0ndjq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+horizontal_alignment = 1
+
+[node name="Highest" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "HIGHEST"
+horizontal_alignment = 1

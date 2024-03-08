@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bklmseap1d0qw"]
+
+[ext_resource type="Script" path="res://scripts/slash/lobby.gd" id="1_621ms"]
+[ext_resource type="PackedScene" uid="uid://dg1lbhhhwd65c" path="res://scripts/components/error_dialog.tscn" id="2_3moun"]
+
+[node name="Lobby" type="VBoxContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_621ms")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "WAITING_FOR_PLAYERS"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+text = "LEAVE_LOBBY"
+
+[node name="error_dialog" parent="." instance=ExtResource("2_3moun")]
+visible = false
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

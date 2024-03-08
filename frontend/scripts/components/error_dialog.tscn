@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg1lbhhhwd65c"]
+
+[ext_resource type="Script" path="res://scripts/components/error_dialog.gd" id="1_l82xs"]
+
+[node name="error_dialog" type="PopupPanel"]
+initial_position = 1
+visible = true
+always_on_top = true
+script = ExtResource("1_l82xs")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "CLOSE"

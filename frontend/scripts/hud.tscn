@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxr8stnh5biei"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_xvtle"]
+[ext_resource type="Theme" uid="uid://babxy2l6tf725" path="res://assets/new_theme.tres" id="2_ursaa"]
+[ext_resource type="Script" path="res://scripts/banner_ads.gd" id="3_kib74"]
+
+[node name="hud" type="CanvasLayer"]
+script = ExtResource("1_xvtle")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("2_ursaa")
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+script = ExtResource("3_kib74")

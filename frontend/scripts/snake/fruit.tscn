@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbtoqwaqgmlq8"]
+
+[ext_resource type="Script" path="res://scripts/snake/fruit.gd" id="1_r2jfg"]
+[ext_resource type="Texture2D" uid="uid://c7nsfcpif3ful" path="res://assets/imgs/plane.png" id="2_3opk0"]
+
+[node name="Fruit" type="Area2D" groups=["fruits"]]
+script = ExtResource("1_r2jfg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-5, -5)
+scale = Vector2(1.5, 1.5)
+polygon = PackedVector2Array(-6, -10, 1.33333, -10, 2.66667, -0.666667, 16.6667, 3.33333, 2.66667, 7.33333, 0.666667, 16.6667, -5.33333, 16.6667, -10.6667, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_3opk0")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://biwod8tpkxpcg"]
+
+[ext_resource type="Script" path="res://scripts/stories/story.gd" id="1_tl6d4"]
+[ext_resource type="PackedScene" uid="uid://dg1lbhhhwd65c" path="res://scripts/components/error_dialog.tscn" id="2_v386o"]
+
+[node name="Story" type="Node3D"]
+script = ExtResource("1_tl6d4")
+
+[node name="error_dialog" parent="." instance=ExtResource("2_v386o")]

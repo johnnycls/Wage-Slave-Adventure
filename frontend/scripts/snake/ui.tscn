@@ -1,0 +1,87 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3wcedh8n85cp"]
+
+[ext_resource type="Script" path="res://scripts/snake/ui.gd" id="1_cpj0w"]
+
+[node name="Ui" type="BoxContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_cpj0w")
+
+[node name="Start" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+
+[node name="Back" type="Button" parent="Start"]
+layout_mode = 2
+text = "BACK"
+
+[node name="Control" type="Control" parent="Start"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Start"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Start"]
+layout_mode = 2
+text = "START"
+
+[node name="Button2" type="Button" parent="Start"]
+visible = false
+layout_mode = 2
+text = "START_AT"
+
+[node name="Control2" type="Control" parent="Start"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Ongoing" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Ongoing"]
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="End" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="End"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="End/CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="End/CenterContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "NEW_RECORD"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="End/CenterContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="End/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "PLAY_AGAIN"
+
+[node name="Button2" type="Button" parent="End/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "BACK"
+
+[connection signal="pressed" from="Start/Back" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Start/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Start/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="End/CenterContainer/VBoxContainer/Button" to="." method="_on_again_button_pressed"]
+[connection signal="pressed" from="End/CenterContainer/VBoxContainer/Button2" to="." method="_on_back_button_pressed"]

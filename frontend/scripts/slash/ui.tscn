@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://crhhmforin67y"]
+
+[ext_resource type="Script" path="res://scripts/slash/ui.gd" id="1_hvl51"]
+[ext_resource type="PackedScene" uid="uid://dg1lbhhhwd65c" path="res://scripts/components/error_dialog.tscn" id="2_sg76v"]
+
+[node name="ui" type="VBoxContainer"]
+offset_right = 160.0
+offset_bottom = 99.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_hvl51")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="SlashBtn" type="Button" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 128
+text = "SLASH"
+
+[node name="error_dialog" parent="." instance=ExtResource("2_sg76v")]
+visible = false

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpdo17y6rdpgv"]
+
+[ext_resource type="Script" path="res://scripts/uis/loading.gd" id="1_ec7as"]
+
+[node name="Loading" type="CenterContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_ec7as")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "LOADING"

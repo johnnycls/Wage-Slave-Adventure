@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3jk0clw4v2bk"]
+
+[ext_resource type="Script" path="res://scripts/slash/player.gd" id="1_sigpd"]
+[ext_resource type="PackedScene" uid="uid://dcubeuu2i82ct" path="res://scripts/slash/cleaver.tscn" id="2_45htb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fp874"]
+size = Vector3(0.4, 2, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_23k2x"]
+size = Vector3(0.4, 2, 0.3)
+
+[node name="player" type="CharacterBody3D"]
+script = ExtResource("1_sigpd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_fp874")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_23k2x")
+
+[node name="cleaver" parent="." instance=ExtResource("2_45htb")]
+transform = Transform3D(0.984808, -0.173648, 0, 0.17101, 0.969846, 0.173648, -0.0301537, -0.17101, 0.984808, 0.2, 0, 0.5)
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+font_size = 64

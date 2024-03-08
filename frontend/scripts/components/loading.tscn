@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8crq1x7taflo"]
+
+[ext_resource type="Script" path="res://scripts/components/loading.gd" id="1_63453"]
+
+[node name="Loading" type="PopupPanel"]
+initial_position = 1
+visible = true
+script = ExtResource("1_63453")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "LOADING"

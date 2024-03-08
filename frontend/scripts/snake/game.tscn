@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://duuuupw68kokg"]
+
+[ext_resource type="Script" path="res://scripts/snake/game.gd" id="1_npd3n"]
+[ext_resource type="Texture2D" uid="uid://5ng3ppswxkpr" path="res://assets/imgs/background.png" id="2_1eh4q"]
+[ext_resource type="AudioStream" uid="uid://bha8gs40jkiyx" path="res://assets/audios/Sand Castle - Quincas Moreira.mp3" id="3_tsy1g"]
+[ext_resource type="AudioStream" uid="uid://b62o3x2redp1n" path="res://assets/audios/eating.mp3" id="4_6ogd6"]
+
+[sub_resource type="Curve2D" id="Curve2D_3nl60"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 1
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_npd3n")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_3nl60")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1eh4q")
+stretch_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tsy1g")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6ogd6")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

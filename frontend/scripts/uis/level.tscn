@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwu8mdthen6dy"]
+
+[ext_resource type="Script" path="res://scripts/uis/level.gd" id="1_raxnp"]
+
+[node name="level" type="ScrollContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_raxnp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+initial_position = 1
+
+[node name="Label" type="Label" parent="PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0

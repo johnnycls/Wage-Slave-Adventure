@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://x0q865qli5xe"]
+
+[ext_resource type="Script" path="res://scripts/uis/transfer.gd" id="1_vgco3"]
+[ext_resource type="PackedScene" uid="uid://dg1lbhhhwd65c" path="res://scripts/components/error_dialog.tscn" id="2_7kx7d"]
+
+[node name="Transfer" type="VBoxContainer"]
+offset_right = 126.0
+offset_bottom = 101.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_vgco3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "BACK"
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "RECIPIENT"
+
+[node name="SpinBox" type="SpinBox" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+min_value = 1.0
+max_value = 9.22337e+18
+value = 1.0
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "TRANSFER"
+
+[node name="error_dialog" parent="." instance=ExtResource("2_7kx7d")]
+visible = false
+
+[connection signal="value_changed" from="CenterContainer/VBoxContainer/SpinBox" to="." method="_on_spin_box_value_changed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_transfer"]

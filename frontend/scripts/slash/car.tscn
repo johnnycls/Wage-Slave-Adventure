@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhguaedr7aorj"]
+
+[ext_resource type="Script" path="res://scripts/slash/car.gd" id="1_utv10"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yoes7"]
+size = Vector3(2, 1.2, 1.5)
+
+[node name="car" type="Node3D"]
+script = ExtResource("1_utv10")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_yoes7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true

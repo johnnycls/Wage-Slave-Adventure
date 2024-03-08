@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://i78yqxrhjftk"]
+
+[ext_resource type="Script" path="res://scripts/slash/me.gd" id="1_37vdf"]
+[ext_resource type="PackedScene" uid="uid://uykpe6gny1a6" path="res://scripts/slash/my_cleaver.tscn" id="2_jr03t"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fp874"]
+size = Vector3(0.4, 2, 0.3)
+
+[node name="me" type="CharacterBody3D"]
+script = ExtResource("1_37vdf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_fp874")
+
+[node name="cleaver" parent="." instance=ExtResource("2_jr03t")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.9, 0)

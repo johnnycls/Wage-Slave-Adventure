@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0gu65gsrjxs2"]
+
+[ext_resource type="Script" path="res://scripts/dice/dice.gd" id="1_32orq"]
+[ext_resource type="PackedScene" uid="uid://dg1lbhhhwd65c" path="res://scripts/components/error_dialog.tscn" id="2_8tbrl"]
+
+[node name="dice" type="VBoxContainer"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_32orq")
+
+[node name="Back_Button" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "BACK"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="end" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="end"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="end"]
+layout_mode = 2
+text = "FINISH"
+
+[node name="error_dialog" parent="." instance=ExtResource("2_8tbrl")]
+visible = false

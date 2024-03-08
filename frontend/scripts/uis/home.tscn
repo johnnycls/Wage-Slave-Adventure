@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn42j038r1hof"]
+
+[ext_resource type="Script" path="res://scripts/uis/home.gd" id="1_g20fh"]
+
+[node name="home" type="VBoxContainer"]
+offset_right = 135.0
+offset_bottom = 138.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_g20fh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Gap" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MoneyBtn" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="StartBtn" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "LVLS"
+
+[node name="MiniGameBtn" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "MINIGAMES"
+
+[node name="AchievementBtn" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "ACHIEVEMENT"
+
+[node name="TransferBtn" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "TRANSFER"
+
+[node name="SettingsBtn" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "SETTINGS"
+
+[connection signal="pressed" from="HBoxContainer/MoneyBtn" to="." method="_on_money_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/StartBtn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/MiniGameBtn" to="." method="_on_mini_game_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/AchievementBtn" to="." method="_on_achievement_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/TransferBtn" to="." method="_on_transfer_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/SettingsBtn" to="." method="_on_settings_btn_pressed"]
